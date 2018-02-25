@@ -834,44 +834,57 @@
 		position: absolute;
 		right: 0em;
 		top: 2.2em;
+        z-index: 1000;
 	}
 
-		#nav > ul > li
-		{
-			float: left;
-		}
+    #nav > ul > li
+    {
+        float: left;
+    }
 		
-			#nav > ul > li:last-child
-			{
-				padding-right: 0;
-			}
+    #nav > ul > li:last-child
+    {
+        padding-right: 0;
+    }
 
-			#nav > ul > li > a,
-			#nav > ul > li > span
-			{
-				display: block;
-				margin-left: 0.7em;
-				padding: 0.80em 1.2em;
-				letter-spacing: 0.06em;
-				text-decoration: none;
-				text-transform: uppercase;
-				font-size: 1.1em;
-				outline: 0;
-				color: #333;
-			}
+    #nav > ul > li > a,
+    #nav > ul > li > span
+    {
+        display: block;
+        margin-left: 0.7em;
+        padding: 0.80em 1.2em;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        outline: 0;
+        color: #333;
+    }
 
-			#nav li.active a
-			{
-				background: #e95d3c;
-				border-radius: 5px;
-				color: #FFF;
-			}
+    #nav li.active a
+    {
+        background: #e95d3c;
+        border-radius: 5px;
+        color: #FFF;
+    }
+    
 
-			#nav > ul > li > ul
-			{
-				display: none;
-			}
-	
+
+    #nav > ul > li > ul
+    {
+        display: none;
+    }
+
+    #nav > ul > li:hover ul
+    {   
+        
+        margin: 1em 0 0 3px;
+        padding: 0;
+        background-color: #FFF;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        display:block;
+    }
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
@@ -879,7 +892,7 @@
 	#banner
 	{
 		position: relative;
-		padding: 12em 0em;
+		padding: 0em 0em;
 		background: url(../images/webbanner.jpg) no-repeat center;
 		background-size: 1200px ;
 		color: #fff;
@@ -888,11 +901,12 @@
     #bannerDesign
     {
 		position: relative;
-		padding: 12em 0em;
+		padding: 0em 0em;
 		background: url(../images/designDept.JPG) no-repeat center;
 		background-size: 1200px ;
 		color: #fff;
 	}
+    
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
@@ -901,6 +915,8 @@
 	{
 		position: relative;
 		background: #fff;
+        padding-top: 0em;
+        padding-bottom: 0em;
 	}
 
 	#main
@@ -913,6 +929,13 @@
 	{
 		font-size: 1.6em;
 	}
+    
+    #topPadding
+    {   
+        padding-top: 4em;
+    }
+
+
 
 /*********************************************************************************/
 /* Footer                                                                        */

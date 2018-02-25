@@ -17,13 +17,57 @@
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
         <script src="js/jquery.dropotron.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>        
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<style>
+            p{
+                text-align: justify;
+             }
+            
+            blockquote {
+                font-family: Georgia, serif;
+                font-size: 18px;
+                font-style: italic;
+                width: 500px;
+                margin: 0.25em 0;
+                padding: 0.35em 40px;
+                line-height: 1.45;
+                position: relative;
+                color: #383838;
+            }
+
+            blockquote:before {
+                display: block;
+                padding-left: 10px;
+                content: "\201C";
+                font-size: 80px;
+                position: absolute;
+                left: -20px;
+                top: -20px;
+                color: #7a7a7a;
+            }
+
+            blockquote cite {
+                color: #999999;
+                font-size: 14px;
+                display: block;
+                margin-top: 5px;
+            }
+
+            blockquote cite:before {
+                content: "\2014 \2009";
+            }
+            
+        </style>
 	</head>
 	<body class="homepage">
 
@@ -37,26 +81,7 @@
 					</div>
 
 				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li class="active"><a href="index.html">Homepage</a></li>
-                            <li>
-                                <a href="">Deparments</a>
-                                <ul>
-                                    <li><a href="">Computer Science</a></li>
-                                    <li><a href="">Mathematics</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">News</a></li>
-                            <li><a href="">Alumani</a></li>
-                            <li><a href="">QuickLinks</a></li>
-                            <li><a href="">ContactUs</a></li>
-							<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>
-							<li><a href="right-sidebar.html">Right Sidebar</a></li>
-							<li><a href="no-sidebar.html">No Sidebar</a></li>-->
-						</ul>
-					</nav>
-
+            <div id=nav-placeholder></div>    
 			</div>
 		</div>
 	<!-- Header -->
@@ -121,18 +146,12 @@
 			<!-- Main -->
 			<div id="main" class="container">
 				<div class="row">
-					<div class="9u">
 						<section>
 							<header>
-								<h2>Integer gravida nibh quis urna</h2>
-								<span class="byline">Augue praesent a lacus at urna congue rutrum</span>
+								<h2>Welcome to IIT Hyderabad Research Portal</h2>
 							</header>
-							<p>This is <strong>Ex Machina</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-							<p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
-							<p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
-							<a href="#" class="button">More Details</a>
+							<p>The PhD programme at the Indian Institute of Technology Hyderabad encourages quality and original research. Currently, IITH offers research degrees in four broad areas, namely, Engineering, Sciences, Liberal Arts and Design. Equipped with international standards research facilities, the faculty here aims to arm the researchers with excellent academic abilities to orient them towards a career in the contemporary world of research. It is, therefore, through the rendition of focused guidance in the development of an individual’s academic as well as creative and humanitarian aspect that IITH seeks to make its mark.</p>
 						</section>
-					</div>
 					<!--<div class="3u">
 						<section class="sidebar">
 							<header>
@@ -158,7 +177,7 @@
 							</ul>
 						</section>
 					</div>-->
-					<div class="3u">
+					<!--<div class="3u">
 						<section class="sidebar">
 							<header>
 								<h2>Feugiat Tempus</h2>
@@ -172,9 +191,34 @@
 							</ul>
 						</section>
 
+					</div>-->
+				</div>
+			</div>
+                        
+            
+            <div id="topPadding" class="container">
+				<div class="row">
+
+						<section>
+							<blockquote>
+                                My message, especially to young people is to have courage to think differently, courage to invent, to travel the unexplored path, courage to discover the impossible and to conquer the problems and succeed.
+                                <cite>Dr. APJ Abdul Kalam</cite>
+                            </blockquote>   
+						</section>
+
+					<div>
+						<section class="sidebar">
+							<ul class="style1">
+								<li><a><img src="./images/kalam.jpeg" height="200" alt=""></a></li>
+							</ul>
+						</section>
 					</div>
 				</div>
 			</div>
+            
+            
+            
+            
 			<!-- Main -->
 
 		</div>
@@ -215,7 +259,7 @@
 	<!-- /Featured -->
 
 	<!-- Footer -->
-		<div id="footer">
+	<!--	<div id="footer">
 			<div class="container">
 				<div class="row">
 					<div class="3u">
@@ -274,7 +318,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 	<!-- /Footer -->
 
 	<!-- Copyright -->
